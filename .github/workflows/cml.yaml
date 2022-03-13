@@ -13,7 +13,7 @@ jobs:
         run: |
           pip install -r requirements.txt
           python model.py
-          echo "## MODEL METRİC" > REPORT.md
+          echo "## MODEL METRİC" >> REPORT.md
           cat metrics.txt >> REPORT.md
 
-    
+          cml-send-comment REPORT.md
