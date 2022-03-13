@@ -22,7 +22,7 @@ import pickle
 
 
 
-df = pd.read_csv('datasets\wine.csv')
+df = pd.read_csv('wine.csv')
 
 
 
